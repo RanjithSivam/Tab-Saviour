@@ -1,0 +1,14 @@
+{
+    "manifest_version":2,
+    "name":"Tabs Savie",
+    "description":"A useful extension to save tabs",
+    "version":"1.0.0",
+    "browser_action":{
+        "default_popup":"popup.html"
+    },
+    "permissions":[
+        "tabs",
+        "<all_urls>"
+    ],
+    "content_security_policy": "script-src 'self' https://kit.fontawesome.com/e7c9af0e3e.js; object-src 'self'"
+}

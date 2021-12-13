@@ -1,0 +1,72 @@
+body {
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+}
+
+#tabs {
+  padding: 10px 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#tabs > div {
+  overflow: hidden;
+  max-height: 150px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.saved_tabs {
+  position: relative;
+}
+
+.action_btns_saved {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.action_btns_saved:hover {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action_btns_saved > i {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 2px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.action_btns_saved:hover > i {
+  display: flex;
+}
+
+.saved_urls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.saved_urls > img {
+  border-radius: 50%;
+}
